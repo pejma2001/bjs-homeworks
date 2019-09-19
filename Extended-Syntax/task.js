@@ -11,8 +11,9 @@ function calculateQuadraticEquation(){
 }
 
 function getResult(a,b,c){
-    // код для задачи №1 писать здесь
-    //return x;
+    "use strict";
+
+
 }
 
 function calculateAverageRating(){
@@ -22,8 +23,15 @@ function calculateAverageRating(){
 }
 
 function getAverageMark(marks){
-    // код для задачи №2 писать здесь
-    //return averageMark;
+    let countMarks = marks.length;
+
+    if (countMarks>5){
+        console.log("Оценок больше 5");
+        let cutMarks = "countMarks.splice(0,5)";
+        let averageMark = cutMarks/cutMarks.length;
+        return averageMark;
+    }
+
 }
 
 function calculateDrinkTask(){
@@ -34,7 +42,11 @@ function calculateDrinkTask(){
 }
 
 function askDrink(name,dateOfBirthday){
-    // код для задачи №3 писать здесь
-    //console.log(result)
-    //return result;
+    let birthYear = getFullYear();
+    let thisYear = new Date();
+    let personAge = thisYear - birthYear;
+    console.log(personAge);
+    return personAge;
+ 
+
 }
